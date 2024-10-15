@@ -1,4 +1,5 @@
 import {getGridSize} from "../../../core/state-manager.js";
+import {CellComponent} from "../cellComponent/cellComponent.js";
 
 export function GridComponent() {
     const element = document.createElement('table')
@@ -14,9 +15,8 @@ async function render(element) {
         const rowElement = document.createElement('tr')
 
         for (let x = 0; x < gridSize.columns; x++) {
-            const cellElement = document.createElement('td')
-            cellElement.append(`${x}, ${y}`)
-            rowElement.append(cellElement)
+            const cellComponent = CellComponent(x, y);
+            rowElement.append(cellComponent.element)
         }
         element.append(rowElement)
     }
