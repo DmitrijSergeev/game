@@ -1,5 +1,5 @@
 import {getGridSize} from "../../../core/state-manager.js";
-import {CellComponent} from "../cellComponent/cellComponent.js";
+import {CellComponent} from "../cellComponent/cell.Component.js";
 
 export function GridComponent() {
     const element = document.createElement('table')

@@ -1,6 +1,6 @@
-import {SettingsComponent} from "./settings/settings.component.js";
-import {ResultPanelComponent} from "./resultPanel/resultPanel.component.js";
-import {GridComponent} from "./grid/grid.component.js";
+import {SettingsComponent} from "./settings/settings.Component.js";
+import {ResultPanelComponent} from "./resultPanel/resultPanel.Component.js";
+import {GridComponent} from "./grid/grid.Component.js";
 
 export function AppComponent() {
     const element = document.createElement('div')

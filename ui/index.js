@@ -1,4 +1,4 @@
-import {AppComponent} from "./components/app.component.js";
+import {AppComponent} from "./components/app.Component.js";
 
 const rootElement = document.getElementById('root')
 
